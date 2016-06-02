@@ -13,7 +13,7 @@ body {
     padding-top: 60px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Avenir Next LT Pro Regular', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
     font-weight: normal;
 }
@@ -47,10 +47,10 @@ a {
     position: fixed;
     top: 0;
     background: #292F33;
+    color: #ECECEC;
     width: 100%;
     z-index: 100;
     height: 60px;
-    color: #ECECEC;
 
     .header-title {
         margin: 0;
@@ -104,7 +104,7 @@ a {
     }
 
     .banner-title {
-        padding: 30px 0 0 0;
+        padding: 10px 0 0 0;
         margin: 0;
         font-size: 36px;
         font-weight: bold;
@@ -173,20 +173,103 @@ a {
 
     a {
         display: inline-block;
-        margin: 10px 0 10px 20px;
-    }
+        margin: 10px 0 10px 30px;
 
-    i {
-        color: #223867;
-        font-size: 30px;
+        i {
+            color: #292F33;
+            font-size: 30px;
+            float: left;
+        }
 
-        &:hover {
-            color: #3560a7;
+        span {
+            display: inline-block;
+            padding: 7px;
+        }
+        
+        &:hover span {
+            text-decoration: underline;
         }
     }
 }
 
-.introduction {
+.features {
     padding: 20px 0;
     background: #E1E8ED;
+    
+    .features-title {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+}
+
+.feature {
+    display: block;
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin: 30px 0 50px 0;
+
+    .feature-icon {
+        display: inline-block;
+        font-size: 30px;
+        padding: 15px 14px 0 14px;
+        background: #292F33;
+        color: #fff;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 64px;
+        height: 64px;
+        text-align: center;
+    }
+
+    .feature-text {
+        padding: 0 40px;
+
+        h4 {
+            font-size: 18px;
+        }
+        
+        p {
+            font-style: italic;
+            color: #292F33;
+        }
+    }
+}
+
+.footer {
+    background: #292F33;
+    color: #CCD6DD;
+    padding: 20px 0 100px 0;
+
+    ul, li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        color: #CCD6DD;
+    }
+
+    .footer-column {
+        display: block;
+        width: 25%;
+        float: left;
+
+        h5 {
+            text-transform: uppercase;
+            font-size: 14px;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        li {
+            padding: 0 0 15px 0;
+        }
+    }
 }

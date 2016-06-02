@@ -27,22 +27,17 @@
             <ul>
                 <li>
                     <a href="">
-                        Get Started
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        The library
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        The Symfony bundle
+                        Get started
                     </a>
                 </li>
                 <li>
                     <a href="">
                         Documentation
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/acmephp/acmephp">
+                        Github
                     </a>
                 </li>
             </ul>
@@ -76,9 +71,9 @@
         </div>
 
         <div class="banner-right">
-            <h2>Get your HTTPS certificate in 4 steps</h2>
+            <h2>Get your HTTPS certificate in 4 simple steps:</h2>
 <pre>
-<span class="comment"># Register in the Let's Encrypt server</span>
+<span class="comment"># Register your account key in Let's Encrypt</span>
 <span class="dollar">$</span> <span class="acmephp">acmephp</span> <span class="command">register</span> <span class="arguments">myemail@example.org</span>
 
 <span class="comment"># Prove you own the domain "mydomain.com"</span>
@@ -90,7 +85,7 @@
 <span class="comment"># Get the certificate!</span>
 <span class="dollar">$</span> <span class="acmephp">acmephp</span> <span class="command">request</span> <span class="arguments">mydomain.com</span>
 
-<span class="comment"># To renew, simply re-run</span> <span class="acmephp">acmephp</span> <span class="command">request</span> <span class="arguments">mydomain.com</span>
+<span class="comment"># To renew, simply re-run acmephp request mydomain.com</span>
 <span class="comment"># Pro-Tip: configure a CRON to renew automatically!</span>
 </pre>
             <p>
@@ -116,11 +111,17 @@
         </div>
 
         <div class="socials-right">
-            <a href="https://github.com/acmephp/acmephp">
-                <i class="fa fa-github"></i>
+            <a href="https://gitter.im/acmephp/acmephp">
+                <i class="fa fa-comments"></i>
+                <span>Talk with us on Gitter</span>
             </a>
             <a href="https://twitter.com/acme_php">
                 <i class="fa fa-twitter"></i>
+                <span>Follow on Twitter</span>
+            </a>
+            <a href="https://github.com/acmephp/acmephp">
+                <i class="fa fa-github"></i>
+                <span>Star on Github</span>
             </a>
         </div>
     </div>
@@ -128,11 +129,199 @@
     <div class="clearfix"></div>
 </section>
 
-<section class="introduction">
+<section class="features">
     <div class="container">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae corporis, cumque cupiditate fuga hic ipsa
-        nemo quod quos ratione, repudiandae unde. Culpa cupiditate eum provident quidem tempore ullam veritatis.
+        <h3 class="features-title">
+            Features
+        </h3>
+
+        <div class="features-list">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fa fa-gears"></i>
+                </div>
+
+                <div class="feature-text">
+                    <h4>Single binary file</h4>
+
+                    <p>
+                        A single download and you are ready to get certificates,
+                        PHP and OpenSSL are the only requirements!
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fa fa-file-text-o"></i>
+                </div>
+
+                <div class="feature-text">
+                    <h4>Powerful configuration</h4>
+
+                    <p>
+                        Acme PHP is based on an expressive configuration file (<code>~/.acmephp/acmephp.conf</code>)
+                        that let you do almsot anything you can think of.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fa fa-clock-o"></i>
+                </div>
+
+                <div class="feature-text">
+                    <h4>Made for automation</h4>
+
+                    <p>
+                        Simply put a CRON the run <code>acmephp request</code> daily:
+                        Acme PHP will take care of the rest, including avoiding to request the server too much.
+                    </p>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fa fa-heartbeat"></i>
+                </div>
+
+                <div class="feature-text">
+                    <h4>Easy to monitor</h4>
+
+                    <p>
+                        Using Monolog, Acme PHP is able to alert you when certificates were renewed during your CRON.
+                        It supports E-mail, Slack, HipChat, Flowdock, Fleep and you can add your own!
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fa fa-cubes"></i>
+                </div>
+
+                <div class="feature-text">
+                    <h4>Extensible</h4>
+
+                    <p>
+                        Using the configuration, you can send your certificates over the network,
+                        add them to an platformsh/heroku app, and much more!
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fa fa-hand-peace-o"></i>
+                </div>
+
+                <div class="feature-text">
+                    <h4>Developer friendly</h4>
+
+                    <p>
+                        Written in PHP with high quality standards, Acme PHP is easy to use in your
+                        application. Manage your certificates directly from your code!
+                    </p>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
     </div>
 </section>
+
+<footer class="footer">
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="footer-column">
+                    <h5>
+                        Documentation
+                    </h5>
+
+                    <ul>
+                        <li>
+                            <a href="">Get started</a>
+                        </li>
+                        <li>
+                            <a href="">Command line tool</a>
+                        </li>
+                        <li>
+                            <a href="">Symfony bundle</a>
+                        </li>
+                        <li>
+                            <a href="">Acme PHP library</a>
+                        </li>
+                        <li>
+                            <a href="">SSL library</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-column">
+                    <h5>
+                        Contribute
+                    </h5>
+
+                    <ul>
+                        <li>
+                            <a href="">Github repository</a>
+                        </li>
+                        <li>
+                            <a href="">Issues tracker</a>
+                        </li>
+                        <li>
+                            <a href="">Improve documentation</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-column">
+                    <h5>
+                        Connect
+                    </h5>
+
+                    <ul>
+                        <li>
+                            <a href="https://gitter.im/acmephp/acmephp">Gitter</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/acme_php">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/acmephp/acmephp">Github</a>
+                        </li>
+                        <li>
+                            <a href="">Improve documentation</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-column">
+                    <h5>
+                        About
+                    </h5>
+
+                    <ul>
+                        <li>
+                            © 2016 Titouan Galopin. All Rights Reserved.
+                        </li>
+                        <li>
+                            Acme PHP is built by
+                            <a href="https://twitter.com/titouangalopin">@tgalopin</a> and
+                            <a href="https://twitter.com/jderusse">@jderusse</a>
+                        </li>
+                        <li>
+                            Acme PHP source code and documentation are free and open-source under the
+                            MIT license
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="clearfix"></div>
+    </div>
+</footer>
 </body>
 </html>
