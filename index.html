@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Acme PHP | Bringing HTTPS integration to the next level</title>
+
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="icons/css/font-awesome.min.css" rel="stylesheet">
+    <link href="min/app.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="header-title">
+            Acme PHP
+        </h1>
+
+        <nav class="header-menu">
+            <ul>
+                <li>
+                    <a href="">
+                        Get Started
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        The library
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        The Symfony bundle
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Documentation
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="banner">
+    <div class="container">
+        <div class="banner-left">
+            <h2 class="banner-title">
+                Bringing HTTPS integration to the next level
+            </h2>
+
+            <ul>
+                <li>
+                    <strong>Acme PHP</strong>
+                    is a simple yet powerful command-line tool to obtain and renew HTTPS certificates
+                    freely and automatically
+                </li>
+                <li>
+                    <strong>Acme PHP</strong>
+                    is also a robust and fully-compliant implementation of the ACME protocol in PHP to deeply
+                    integrate the management of your certificates directly in your application
+                </li>
+            </ul>
+
+            <a href="" class="banner-button">
+                Get Started
+            </a>
+        </div>
+
+        <div class="banner-right">
+            <h2>Get your HTTPS certificate in 5 steps</h2>
+<pre>
+<span class="comment"># Initialize configuration in ~/.acmephp/acmephp.conf</span>
+<span class="dollar">$</span> <span class="acmephp">acmephp</span> <span class="command">init</span>
+
+<span class="comment"># Register your server in the Let's Encrypt server</span>
+<span class="dollar">$</span> <span class="acmephp">acmephp</span> <span class="command">register</span> <span class="arguments">myemail@example.org</span>
+
+<span class="comment"># Prove you own the domain "mydomain.com"</span>
+<span class="dollar">$</span> <span class="acmephp">acmephp</span> <span class="command">authorize</span> <span class="arguments">mydomain.com</span>
+
+<span class="comment"># Ask the server to check your proof</span>
+<span class="dollar">$</span> <span class="acmephp">acmephp</span> <span class="command">check</span> <span class="arguments">mydomain.com</span>
+
+<span class="comment"># Get the certificate!</span>
+<span class="dollar">$</span> <span class="acmephp">acmephp</span> <span class="command">request</span> <span class="arguments">mydomain.com</span>
+
+<span class="comment"># To renew, simply re-run</span> <span class="acmephp">acmephp</span> <span class="command">request</span> <span class="arguments">mydomain.com</span>
+<span class="comment"># Pro-Tip: configure a CRON to renew automatically!</span>
+</pre>
+            <p>
+                Acme PHP also supports
+                <a href="">monitoring</a>,
+                <a href="">backups</a>,
+                <a href="">formatters</a> and
+                <a href="">more!</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+</section>
+
+<section class="socials">
+    <div class="container">
+        <div class="socials-left">
+            Check out the latest developments in the
+            <a href="https://github.com/acmephp/acmephp">
+                GitHub repository
+            </a>
+        </div>
+
+        <div class="socials-right">
+            <a href="https://github.com/acmephp/acmephp">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="https://twitter.com/acme_php">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+</section>
+
+<section class="introduction">
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae corporis, cumque cupiditate fuga hic ipsa
+        nemo quod quos ratione, repudiandae unde. Culpa cupiditate eum provident quidem tempore ullam veritatis.
+    </div>
+</section>
+</body>
+</html>
