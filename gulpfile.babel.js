@@ -73,6 +73,7 @@ gulp.task('jsx:prod', () =>
                 new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false }, test: /\.js($|\?)/i })
             ]
         }))
+        .pipe(header(banner, { date: fecha.format(new Date(), 'YYYYMMDD') }))
         .pipe(gulp.dest(config.jsx.to))
 );
 

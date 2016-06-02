@@ -3,5 +3,3 @@ logs
 npm-debug.log*
 node_modules
 .npm
-min/*
-!min/.gitkeep
