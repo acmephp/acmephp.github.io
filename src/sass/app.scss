@@ -47,11 +47,14 @@ a {
     position: fixed;
     top: 0;
     background: #292F33;
-    color: #ECECEC;
     width: 100%;
     z-index: 100;
     height: 60px;
 
+    a, a:hover {
+        color: #ECECEC;
+    }
+    
     .header-title {
         margin: 0;
         padding: 16px 0 0 0;
@@ -76,7 +79,6 @@ a {
             a {
                 display: block;
                 padding: 10px 15px 9px 15px;
-                color: #ECECEC;
                 font-weight: 600;
                 text-decoration: none;
             }
