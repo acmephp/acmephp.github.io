@@ -285,6 +285,10 @@ a {
 
             li {
                 padding-bottom: 15px;
+
+                &.current {
+                    font-weight: bold;
+                }
             }
         }
     }
