@@ -9,10 +9,6 @@ body, html {
     background: #F5F8FA;
 }
 
-body {
-    padding-top: 60px;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Avenir Next LT Pro Regular', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
     font-weight: normal;
@@ -58,18 +54,15 @@ a {
 }
 
 .header {
-    position: fixed;
-    top: 0;
     background: #292F33;
     width: 100%;
-    z-index: 100;
     height: 60px;
     min-width: 945px;
 
     a, a:hover {
         color: #ECECEC;
     }
-    
+
     .header-title {
         margin: 0;
         padding: 16px 0 0 0;
@@ -86,7 +79,7 @@ a {
             margin: 0;
             padding: 0;
         }
-        
+
         li {
             display: inline-block;
             margin-left: 10px;
@@ -203,7 +196,7 @@ a {
             display: inline-block;
             padding: 7px;
         }
-        
+
         &:hover span {
             text-decoration: underline;
         }
@@ -214,7 +207,7 @@ a {
     padding: 20px 0;
     background: #E1E8ED;
     min-width: 985px;
-    
+
     .features-title {
         text-align: center;
         font-size: 22px;
@@ -252,7 +245,7 @@ a {
         h4 {
             font-size: 18px;
         }
-        
+
         p {
             font-style: italic;
             color: #292F33;
