@@ -73,18 +73,18 @@
             <h2>Get your HTTPS certificate in 4 simple steps:</h2>
 <pre>
 <span class="comment"># Register your account key in Let's Encrypt</span>
-<span class="dollar">$</span> <span class="acmephp">acmephp</span> <span class="command">register</span> <span class="arguments">myemail@example.org</span>
+<span class="dollar">$</span> <span class="acmephp">php acmephp.phar</span> <span class="command">register</span> <span class="arguments">myemail@example.org</span>
 
 <span class="comment"># Prove you own the domain "mydomain.com"</span>
-<span class="dollar">$</span> <span class="acmephp">acmephp</span> <span class="command">authorize</span> <span class="arguments">mydomain.com</span>
+<span class="dollar">$</span> <span class="acmephp">php acmephp.phar</span> <span class="command">authorize</span> <span class="arguments">mydomain.com</span>
 
 <span class="comment"># Ask the server to check your proof</span>
-<span class="dollar">$</span> <span class="acmephp">acmephp</span> <span class="command">check</span> <span class="arguments">mydomain.com</span>
+<span class="dollar">$</span> <span class="acmephp">php acmephp.phar</span> <span class="command">check</span> <span class="arguments">mydomain.com</span>
 
 <span class="comment"># Get the certificate!</span>
-<span class="dollar">$</span> <span class="acmephp">acmephp</span> <span class="command">request</span> <span class="arguments">mydomain.com</span>
+<span class="dollar">$</span> <span class="acmephp">php acmephp.phar</span> <span class="command">request</span> <span class="arguments">mydomain.com</span>
 
-<span class="comment"># To renew, simply re-run acmephp request mydomain.com</span>
+<span class="comment"># To renew, simply re-run php acmephp.phar request mydomain.com</span>
 <span class="comment"># Pro-Tip: configure a CRON to renew automatically!</span>
 </pre>
         </div>
